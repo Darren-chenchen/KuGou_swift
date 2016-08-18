@@ -10,8 +10,11 @@ import UIKit
 
 class CLTitleScrollView: UIView {
 
+//    override init(frame: CGRect) {
+//        self.setupUI()
+//    }
     
-    func initwithFrameAndTitleArray(frame:CGRect,titleArray:NSArray) -> CLTitleScrollView {
+    func initWithFrameAndTitleArray(frame:CGRect,titleArr:NSArray) -> CLTitleScrollView {
         
         return self
     }

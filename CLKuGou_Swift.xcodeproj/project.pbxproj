@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952CC9851D63539500BB4DC0 /* linsenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952CC9841D63539500BB4DC0 /* linsenCell.swift */; };
+		952CC9871D6358D200BB4DC0 /* bj.png in Resources */ = {isa = PBXBuildFile; fileRef = 952CC9861D6358D200BB4DC0 /* bj.png */; };
+		952CC9891D6359D900BB4DC0 /* LinsenHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952CC9881D6359D900BB4DC0 /* LinsenHeadView.swift */; };
+		952CC98B1D635E4F00BB4DC0 /* coustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952CC98A1D635E4F00BB4DC0 /* coustomBtn.swift */; };
 		9533250E1D561836000F6A53 /* CLTitleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533250D1D561836000F6A53 /* CLTitleScrollView.swift */; };
 		957CCC911D5A153400EECA8E /* CLPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957CCC901D5A153400EECA8E /* CLPresent.swift */; };
 		957CCC931D5A169900EECA8E /* CoustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957CCC921D5A169900EECA8E /* CoustomPresentationController.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		952CC9841D63539500BB4DC0 /* linsenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = linsenCell.swift; sourceTree = "<group>"; };
+		952CC9861D6358D200BB4DC0 /* bj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bj.png; sourceTree = "<group>"; };
+		952CC9881D6359D900BB4DC0 /* LinsenHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinsenHeadView.swift; sourceTree = "<group>"; };
+		952CC98A1D635E4F00BB4DC0 /* coustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coustomBtn.swift; sourceTree = "<group>"; };
 		9533250D1D561836000F6A53 /* CLTitleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTitleScrollView.swift; sourceTree = "<group>"; };
 		957CCC901D5A153400EECA8E /* CLPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPresent.swift; sourceTree = "<group>"; };
 		957CCC921D5A169900EECA8E /* CoustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoustomPresentationController.swift; sourceTree = "<group>"; };
@@ -89,6 +97,7 @@
 		957CCC961D5A253000EECA8E /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				952CC9861D6358D200BB4DC0 /* bj.png */,
 				957CCC971D5A253E00EECA8E /* set_bj1.jpg */,
 			);
 			path = resources;
@@ -175,6 +184,9 @@
 				95CED1CF1D5582FC00EBF530 /* TabBarView.xib */,
 				959635521D55D66200B3907F /* NavgationBarView.swift */,
 				9533250D1D561836000F6A53 /* CLTitleScrollView.swift */,
+				952CC9841D63539500BB4DC0 /* linsenCell.swift */,
+				952CC9881D6359D900BB4DC0 /* LinsenHeadView.swift */,
+				952CC98A1D635E4F00BB4DC0 /* coustomBtn.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -289,6 +301,7 @@
 				95CED1A91D557C5B00EBF530 /* Assets.xcassets in Resources */,
 				95CED1D01D5582FC00EBF530 /* TabBarView.xib in Resources */,
 				95CED1A71D557C5B00EBF530 /* Main.storyboard in Resources */,
+				952CC9871D6358D200BB4DC0 /* bj.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +319,12 @@
 				95CED1C81D5581F000EBF530 /* LinsenViewController.swift in Sources */,
 				959635531D55D66200B3907F /* NavgationBarView.swift in Sources */,
 				95CED1BF1D557E7500EBF530 /* TabBarViewController.swift in Sources */,
+				952CC98B1D635E4F00BB4DC0 /* coustomBtn.swift in Sources */,
+				952CC9891D6359D900BB4DC0 /* LinsenHeadView.swift in Sources */,
 				95CED1CC1D55822800EBF530 /* SingViewController.swift in Sources */,
 				9533250E1D561836000F6A53 /* CLTitleScrollView.swift in Sources */,
 				95CED1A21D557C5B00EBF530 /* AppDelegate.swift in Sources */,
+				952CC9851D63539500BB4DC0 /* linsenCell.swift in Sources */,
 				95CED1C11D55805100EBF530 /* BaseViewController.swift in Sources */,
 				957CCC911D5A153400EECA8E /* CLPresent.swift in Sources */,
 				95CED1C31D55807900EBF530 /* MainViewController.swift in Sources */,

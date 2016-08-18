@@ -14,6 +14,7 @@ class NavgationBarView: UIView {
         
         self.addSubview(self.titleLable)
         self.addSubview(self.navLine)
+        self.backgroundColor = NavBackGroundColor()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -34,7 +35,6 @@ class NavgationBarView: UIView {
     }()
     
     override func layoutSubviews() {
-        self.backgroundColor = NavBackGroundColor()
         self.titleLable.frame = CGRectMake(0, 20, APPW, 64-20);
         self.navLine.frame = CGRectMake(0, 64, APPW, 0.26);
     }

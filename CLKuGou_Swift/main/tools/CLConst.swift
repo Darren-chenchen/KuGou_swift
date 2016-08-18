@@ -34,3 +34,15 @@ func APPTextColor() -> UIColor{
     return CoustomColor(50, g: 50, b: 50, a: 1)
 }
 
+// MARK:- 设置圆角
+func CLViewsBorder(view:UIView, borderWidth:CGFloat, borderColor:UIColor,cornerRadius:CGFloat){
+    view.layer.borderWidth = 1;
+    view.layer.borderColor = borderColor.CGColor
+    view.layer.cornerRadius = cornerRadius
+}
+
+//==================  通知  ===================================
+let CLNotificationCenter = NSNotificationCenter.defaultCenter()
+let ChangeMainVCContentEnable = "ChangeMainVCContentEnable"
+
+

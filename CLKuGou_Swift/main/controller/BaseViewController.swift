@@ -10,7 +10,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    weak var coustomNavBar = NavgationBarView()   // 自定义导航栏
+    var coustomNavBar:NavgationBarView = NavgationBarView()// 自定义导航栏
     weak var leftBtn = UIButton()
     weak var rightBtn = UIButton()
     weak var backBtn = UIButton()
@@ -25,24 +25,22 @@ class BaseViewController: UIViewController {
         self.setupNav()
     }
     
-    func setupNav(){
-        let coustomNav = NavgationBarView()
-        coustomNav.frame = CGRectMake(0, 0, APPW, NavHeight)
-        self.coustomNavBar = coustomNav
-        coustomNav.backgroundColor = NavBackGroundColor()
-        self.view.addSubview(coustomNav)
-        
+   private func setupNav(){
+    
+       coustomNavBar.frame = CGRectMake(0, 0, APPW, NavHeight)
+       self.view.addSubview(coustomNavBar)
+
         let leftBtn = UIButton()
         self.leftBtn = leftBtn;
         leftBtn.frame = CGRectMake(10, 7, 50, 50);
         leftBtn.addTarget(self, action: #selector(BaseViewController.leftBtnclick), forControlEvents: .TouchUpInside)
-        self.coustomNavBar?.addSubview(leftBtn)
+        self.coustomNavBar.addSubview(leftBtn)
         
         let rightBtn = UIButton()
         self.rightBtn = rightBtn;
         rightBtn.frame = CGRectMake(APPW-40, 25, 30, 30);
         rightBtn.addTarget(self, action: #selector(BaseViewController.rightBtnclick), forControlEvents: UIControlEvents.TouchUpInside)
-        self.coustomNavBar?.addSubview(rightBtn)
+        self.coustomNavBar.addSubview(rightBtn)
         
         let backBtn = UIButton()
         self.backBtn = backBtn;
@@ -50,7 +48,7 @@ class BaseViewController: UIViewController {
         backBtn.setImage((UIImage(named: "backButton")), forState:.Normal)
         backBtn.addTarget(self, action: #selector(BaseViewController.backBtnclick), forControlEvents: .TouchUpInside)
         if (self.navigationController?.childViewControllers.count>1){
-            self.coustomNavBar?.addSubview(backBtn)
+            self.coustomNavBar.addSubview(backBtn)
         }
     }
     
